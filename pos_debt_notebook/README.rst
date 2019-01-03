@@ -25,12 +25,26 @@ Installation \ Deinstallation
   POS config would not be changed. 
 * Multicompany mode is supported
 
+Roadmap
+=======
+
+* TODO. New option for **Zero transactions** feature: allow to create extra order line with negative amount instead of applying discounts. 
+
+  * It creates extra record in accounting system (pos.order.line). It can be used as a backup for *Manual Updates*
+  * It works with following problem case:
+  
+        In case of purchasing products with taxes not included in the price, such journals cannot be used along with normal payments
+
+
 Credits
 =======
 
 Contributors
 ------------
-* krotov@it-projects.info
+* `Ivan Yelizariev <https://it-projects.info/team/yelizariev>`__
+* `Stanislav Krotov <https://it-projects.info/team/ufaks>`__
+* `Dinar Gabbasov <https://it-projects.info/team/GabbasovDinar>`__
+* `Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>`__
 
 Sponsors
 --------
@@ -47,4 +61,4 @@ Usage instructions: `<doc/index.rst>`__
 
 Changelog: `<doc/changelog.rst>`__
 
-Tested on Odoo 10.0 8bd56bb46628e57f41c635f20c527264d7a20d86
+Tested on Odoo 12.0 b05e34a0d9b13a1c6971b99ed3e5fa20199f3545

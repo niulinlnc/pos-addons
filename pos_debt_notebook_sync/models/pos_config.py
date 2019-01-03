@@ -1,4 +1,6 @@
-# -*- coding: utf-8 -*-
+# Copyright 2017 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
+
 from odoo import models, api
 
 
@@ -13,7 +15,7 @@ class PosConfig(models.Model):
     def notify_debt_updates(self):
         model = self.env.context['active_model']
         ids = self.env.context['active_ids']
-        records = self.env[model].browse(ids)
+        records = self.env[model].sudo().browse(ids)
 
         partners = None
         if model == 'account.bank.statement.line':

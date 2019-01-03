@@ -1,15 +1,14 @@
-# -*- coding: utf-8 -*-
 {
     "name": """POS Longpolling""",
-    "summary": """Technical module implement instant updates in POS""",
+    "summary": """Technical module to implement instant updates in POS""",
     "category": "Point of Sale",
     "images": [],
-    "version": "1.1.1",
+    "version": "12.0.2.1.1",
     "application": False,
 
     "author": "IT-Projects LLC, Dinar Gabbasov",
-    "support": "apps@it-projects.info",
-    "website": "https://twitter.com/gabbasov_dinar",
+    "support": "pos@it-projects.info",
+    "website": "https://apps.odoo.com/apps/modules/12.0/pos_longpolling/",
     "license": "LGPL-3",
     # "price": 0.00,
     # "currency": "EUR",
